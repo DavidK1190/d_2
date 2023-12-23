@@ -1,0 +1,311 @@
+:root {
+
+    --sale-badge-background: rgb(0, 0, 0);
+    --product-card-background: #1D594E;
+    --product-card-blocks-bg: #277365;
+    --product-card-green: rgb(54, 97, 53);
+    --product-card-border-active: #F29F05;
+    --product-card-font: rgb(255, 255, 255);
+    --product-card-light-green: #00ff1a;
+    --product-price-full: rgb(142, 3, 3);
+
+}
+
+body {
+
+position: absolute;
+
+}
+
+.product-card {
+
+    display: flex;
+    width: 1100px;
+    background-color: var(--product-card-background);
+    border-radius: 20px;
+    margin: 20px;
+    
+}
+
+/**** Slevy - nálepka ****/
+
+.sale-badge {
+
+    display: flex;
+    position: absolute;
+    right: 450px;
+    top: 50px;
+    font-size: 25px;
+    color: var(--product-card-font);
+    width: 80px;
+    height: 80px;
+    background-color: var(--sale-badge-background);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-15deg);
+    
+}
+
+/**** Cenový trhák ****/
+
+.sale-info {
+
+    display: flex;
+    position: absolute;
+    right: 450px;
+    top: 150px;
+    color: var(--product-card-font);
+    width: 80px;
+    height: 80px;
+    background-color: var(--sale-badge-background);
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.sale-info-label {
+
+    display: flex;
+    position: absolute;
+    color: var(--product-card-border-active);
+    margin-top: 30px;
+    
+}
+
+
+/**** Obrázek produktu ****/
+
+.bunda {
+
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+
+/**** Boční strana produktové karty ****/
+
+.product-container {
+
+    
+    margin-left: 20px;
+    width: 750px;
+}
+
+/**** Kategorie produktu ****/
+
+.category {
+
+    
+    position: relative;
+    color: var(--product-card-font);
+    font-size: 20px;
+    color: var(--product-card-font);
+
+    
+}
+
+/**** Název produktu ****/
+
+h1 {
+
+    position: relative;
+    margin-bottom: 20px;
+    color: var(--product-card-font);
+}
+
+/**** Element s cenovkou ****/
+
+.product-price-container {
+
+    position: relative;
+    background-color: var(--product-card-blocks-bg);
+    height: 120px;
+    width: 150px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+}
+
+/**** Akční cena ****/
+
+.price-label {
+
+    position: relative;
+    font-size: 20px;
+    top: 15px;
+    left: 10px;
+    font-weight: bold;
+    color: var(--product-card-font);
+}
+
+.price-sale {
+
+    
+    position: absolute;
+    font-weight: bold;
+    color: var(--product-card-light-green);
+    font-size: 25px;
+    top: 40px;
+    left: 10px;
+    margin-bottom: 10px;
+
+}
+
+/**** Původní cena ****/
+
+.price-no-sale-label {
+
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    font-weight: bold;
+    color: var(--product-card-font);
+}
+
+.price-full {
+
+    position: absolute;
+    font-weight: bold;
+    top: 90px;
+    font-size: 20px;
+    left: 10px;
+    text-decoration: line-through;
+    color: var(--product-price-full)
+
+}
+
+/**** Barva produktu ****/
+
+.color {
+
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--product-card-font);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+    
+}
+
+/**** Výběr barvy / materiálu ****/
+
+.color-picker {
+
+    display: flex;
+    width: 70px;
+    position: relative;
+    border: 5px solid var(--product-card-border-active);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/**** Výběr velikosti ****/
+
+.size-picker-container {
+
+    position: relative;
+}
+
+.size-label {
+
+    position: relative;
+    text-transform: uppercase;
+    color: var(--product-card-font);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.size-list {
+
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.size-list li {
+
+    margin-right: 10px;
+    color: var(--product-card-font);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+/**** Aktivní velikost ****/
+
+.large-size {
+
+    border: 3px solid var(--product-card-border-active);
+    padding: 5px;
+}
+
+/**** Vložít do košíku ****/
+
+.add-to-cart {
+
+    display: flex;
+    text-transform: uppercase;
+    height: 50px;
+    width: 230px;
+    background-color: var(--product-card-blocks-bg);
+    border-radius: 20px;
+    color: var(--product-card-light-green);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/**** Zboží skladem na prodejně ****/
+
+.store-stock-container {
+
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: var(--product-card-blocks-bg);
+    border-radius: 20px 0px 0px 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/**** Obchod ****/
+
+.store {
+    
+    color: var(--product-card-font);
+    margin-right: 50px;
+}
+
+/**** Sklad ****/
+
+.stock {
+
+   color: var(--product-card-light-green);
+   text-decoration: underline;
+
+}
+
+/**** Info o produktu ****/
+
+.product-info-container {
+
+    color: var(--product-card-font);
+    font-size: 17px;
+    line-height: 1.5;
+}
