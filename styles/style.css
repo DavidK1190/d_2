@@ -20,10 +20,10 @@ position: absolute;
 .product-card {
 
     display: flex;
-    width: 1100px;
+    width: 750px;
     background-color: var(--product-card-background);
     border-radius: 20px;
-    margin: 20px;
+    margin: 10px;
     
 }
 
@@ -33,7 +33,7 @@ position: absolute;
 
     display: flex;
     position: absolute;
-    right: 450px;
+    right: 300px;
     top: 50px;
     font-size: 25px;
     color: var(--product-card-font);
@@ -53,7 +53,7 @@ position: absolute;
 
     display: flex;
     position: absolute;
-    right: 450px;
+    right: 300px;
     top: 150px;
     color: var(--product-card-font);
     width: 80px;
@@ -64,15 +64,15 @@ position: absolute;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
+    text-align: center;
     
 }
 
 .sale-info-label {
 
-    display: flex;
-    position: absolute;
+    
     color: var(--product-card-border-active);
-    margin-top: 30px;
+   
     
 }
 
@@ -83,7 +83,7 @@ position: absolute;
 
     max-width: 60%;
     max-height: 60%;
-    object-fit: contain;
+    object-fit: cover;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -107,7 +107,7 @@ position: absolute;
     
     position: relative;
     color: var(--product-card-font);
-    font-size: 20px;
+    font-size: 16px;
     color: var(--product-card-font);
 
     
@@ -131,7 +131,7 @@ h1 {
     height: 120px;
     width: 150px;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     
 }
 
@@ -231,6 +231,7 @@ h1 {
     list-style: none;
     padding: 0;
     display: flex;
+    align-items: baseline;
 }
 
 .size-list li {
@@ -275,12 +276,13 @@ h1 {
     display: flex;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
     height: 50px;
     background-color: var(--product-card-blocks-bg);
     border-radius: 20px 0px 0px 20px;
     align-items: center;
     justify-content: center;
+    padding-left: 15px;
+    padding-right: 10px;
     
 }
 
@@ -289,7 +291,6 @@ h1 {
 .store {
     
     color: var(--product-card-font);
-    margin-right: 50px;
 }
 
 /**** Sklad ****/
@@ -298,6 +299,7 @@ h1 {
 
    color: var(--product-card-light-green);
    text-decoration: underline;
+   
 
 }
 
@@ -307,5 +309,5 @@ h1 {
 
     color: var(--product-card-font);
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1.2;
 }
